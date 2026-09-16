@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" fill="none">
+  <defs>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1216"/>
+      <stop offset="1" stop-color="#160B0D"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E4213F"/>
+      <stop offset="1" stop-color="#FF7A8E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- laptop base -->
+  <rect x="70" y="40" width="500" height="310" rx="14" fill="url(#screenGrad)" stroke="#3A2226" stroke-width="2"/>
+  <rect x="86" y="56" width="468" height="278" rx="4" fill="#0E0708"/>
+  <path d="M20 372 L620 372 L580 410 L60 410 Z" fill="#1E1315" stroke="#3A2226" stroke-width="2"/>
+  <rect x="270" y="372" width="100" height="6" rx="3" fill="#3A2226"/>
+
+  <!-- grid -->
+  <g opacity="0.25" stroke="#5A3238" stroke-width="1">
+    <line x1="86" y1="120" x2="554" y2="120"/>
+    <line x1="86" y1="185" x2="554" y2="185"/>
+    <line x1="86" y1="250" x2="554" y2="250"/>
+    <line x1="86" y1="315" x2="554" y2="315"/>
+  </g>
+
+  <!-- candlesticks -->
+  <g stroke-width="2">
+    <line x1="120" y1="230" x2="120" y2="300" stroke="#7A2430"/>
+    <rect x="112" y="250" width="16" height="30" fill="#7A2430"/>
+    <line x1="150" y1="210" x2="150" y2="270" stroke="#E4213F"/>
+    <rect x="142" y="220" width="16" height="35" fill="#E4213F"/>
+    <line x1="180" y1="260" x2="180" y2="310" stroke="#7A2430"/>
+    <rect x="172" y="270" width="16" height="25" fill="#7A2430"/>
+    <line x1="210" y1="200" x2="210" y2="260" stroke="#E4213F"/>
+    <rect x="202" y="205" width="16" height="35" fill="#E4213F"/>
+    <line x1="240" y1="170" x2="240" y2="230" stroke="#E4213F"/>
+    <rect x="232" y="175" width="16" height="35" fill="#E4213F"/>
+    <line x1="270" y1="205" x2="270" y2="255" stroke="#7A2430"/>
+    <rect x="262" y="210" width="16" height="28" fill="#7A2430"/>
+    <line x1="300" y1="150" x2="300" y2="210" stroke="#E4213F"/>
+    <rect x="292" y="155" width="16" height="35" fill="#E4213F"/>
+    <line x1="330" y1="180" x2="330" y2="235" stroke="#7A2430"/>
+    <rect x="322" y="190" width="16" height="28" fill="#7A2430"/>
+    <line x1="360" y1="120" x2="360" y2="185" stroke="#E4213F"/>
+    <rect x="352" y="128" width="16" height="38" fill="#E4213F"/>
+  </g>
+
+  <!-- trend line -->
+  <polyline points="400,260 430,230 460,245 490,180 520,150" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="520" cy="150" r="5" fill="#FF7A8E"/>
+
+  <!-- play button -->
+  <circle cx="300" cy="200" r="46" fill="rgba(15,9,10,0.55)" stroke="#F3E9EA" stroke-width="1.5"/>
+  <path d="M288 180L322 200L288 220V180Z" fill="#F3E9EA"/>
+</svg>
