@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giảng viên — CKLpro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;">
+        <img src="images/logo.svg" alt="CKLpro">
+        <div>
+          <div class="brand-name">CKLpro</div>
+          <div class="brand-tagline">Kiến thức tạo nên giá trị</div>
+        </div>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="noi-dung-khoa-hoc.html">Nội dung khóa học</a>
+      <a href="giang-vien.html" class="active">Giảng viên</a>
+      <a href="video-tai-lieu.html">Video & Tài liệu</a>
+      <a href="dang-ky.html">Đăng ký</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Tìm kiếm" aria-expanded="false"><img src="images/icon-search.svg" alt=""></button>
+      <button class="music-toggle" id="musicToggle" aria-pressed="false">
+        <img src="images/icon-music.svg" alt="">
+        <span>Nhạc nền</span>
+      </button>
+      <a href="dang-ky.html" class="btn btn-primary">Đăng ký ngay</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="mobileNav">
+        <img src="images/icon-menu.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <div class="wrap">
+      <form id="searchForm" role="search">
+        <img src="images/icon-search.svg" alt="">
+        <input type="search" placeholder="Tìm bài học, tài liệu, giảng viên…" aria-label="Tìm kiếm">
+      </form>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" hidden>
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="noi-dung-khoa-hoc.html">Nội dung khóa học</a>
+      <a href="giang-vien.html" class="active">Giảng viên</a>
+      <a href="video-tai-lieu.html">Video & Tài liệu</a>
+      <a href="dang-ky.html">Đăng ký</a>
+</nav>
+
+<section class="page-banner">
+  <div class="wrap">
+    <h1>Giảng viên</h1>
+  </div>
+</section>
+
+<section class="empty-state-section">
+  <div class="wrap">
+    <div class="empty-state">
+      <div class="empty-state-icon"><img src="images/icon-clock.svg" alt=""></div>
+      <h2>Nội dung đang được cập nhật</h2>
+      <p>Thông tin đội ngũ giảng viên sẽ sớm được cập nhật tại đây.</p>
+      <a href="index.html" class="btn btn-outline">← Về trang chủ</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="brand">
+        <img src="images/logo.svg" alt="CKLpro">
+        <div>
+          <div class="brand-name">CKLpro</div>
+          <div class="brand-tagline">Kiến thức tạo nên giá trị</div>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><img src="images/social-facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/social-youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="images/social-tiktok.svg" alt="TikTok"></a>
+        <a href="#"><img src="images/social-linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      "Hành trình vạn dặm bắt đầu từ một kiến thức đúng đắn." &nbsp;·&nbsp; © 2026 CKLpro. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

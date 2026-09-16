@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nội dung khóa học — CKLpro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;">
+        <img src="images/logo.svg" alt="CKLpro">
+        <div>
+          <div class="brand-name">CKLpro</div>
+          <div class="brand-tagline">Kiến thức tạo nên giá trị</div>
+        </div>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="noi-dung-khoa-hoc.html" class="active">Nội dung khóa học</a>
+      <a href="giang-vien.html">Giảng viên</a>
+      <a href="video-tai-lieu.html">Video & Tài liệu</a>
+      <a href="dang-ky.html">Đăng ký</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Tìm kiếm" aria-expanded="false"><img src="images/icon-search.svg" alt=""></button>
+      <button class="music-toggle" id="musicToggle" aria-pressed="false">
+        <img src="images/icon-music.svg" alt="">
+        <span>Nhạc nền</span>
+      </button>
+      <a href="dang-ky.html" class="btn btn-primary">Đăng ký ngay</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="mobileNav">
+        <img src="images/icon-menu.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <div class="wrap">
+      <form id="searchForm" role="search">
+        <img src="images/icon-search.svg" alt="">
+        <input type="search" placeholder="Tìm bài học, tài liệu, giảng viên…" aria-label="Tìm kiếm">
+      </form>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" hidden>
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="noi-dung-khoa-hoc.html" class="active">Nội dung khóa học</a>
+      <a href="giang-vien.html">Giảng viên</a>
+      <a href="video-tai-lieu.html">Video & Tài liệu</a>
+      <a href="dang-ky.html">Đăng ký</a>
+</nav>
+
+<section class="page-banner">
+  <div class="wrap">
+    <span class="eyebrow">Nội dung khóa học</span>
+    <h1>Chương trình học chi tiết</h1>
+    <p class="hero-lede">5 module, 10 tuần học theo lộ trình — từ nền tảng thị trường đến chiến lược đầu tư thực chiến.</p>
+  </div>
+</section>
+
+<section class="curriculum">
+  <div class="wrap">
+    <ol class="curriculum-list">
+      <li class="curriculum-module is-open">
+        <button class="module-head" aria-expanded="true">
+          <span class="module-num">01</span>
+          <span class="module-headline">
+            <span class="module-title">Làm quen thị trường</span>
+            <span class="module-meta">Tuần 1 – 2 · 4 bài học</span>
+          </span>
+          <span class="module-caret">⌄</span>
+        </button>
+        <div class="module-body">
+          <ul class="check-list">
+          <li><img src="images/icon-check.svg" alt="">Tổng quan thị trường chứng khoán Việt Nam</li>
+          <li><img src="images/icon-check.svg" alt="">Các khái niệm cơ bản: cổ phiếu, trái phiếu, chỉ số</li>
+          <li><img src="images/icon-check.svg" alt="">Mở tài khoản &amp; làm quen giao diện giao dịch</li>
+          <li><img src="images/icon-check.svg" alt="">Đọc hiểu bảng giá, lệnh mua/bán cơ bản</li>
+          </ul>
+        </div>
+      </li>
+      <li class="curriculum-module">
+        <button class="module-head" aria-expanded="false">
+          <span class="module-num">02</span>
+          <span class="module-headline">
+            <span class="module-title">Phân tích doanh nghiệp</span>
+            <span class="module-meta">Tuần 3 – 4 · 5 bài học</span>
+          </span>
+          <span class="module-caret">⌄</span>
+        </button>
+        <div class="module-body">
+          <ul class="check-list">
+          <li><img src="images/icon-check.svg" alt="">Đọc báo cáo tài chính: Bảng cân đối kế toán</li>
+          <li><img src="images/icon-check.svg" alt="">Đọc báo cáo tài chính: Kết quả kinh doanh &amp; lưu chuyển tiền tệ</li>
+          <li><img src="images/icon-check.svg" alt="">Các chỉ số định giá: P/E, P/B, ROE, ROA</li>
+          <li><img src="images/icon-check.svg" alt="">So sánh doanh nghiệp cùng ngành</li>
+          <li><img src="images/icon-check.svg" alt="">Case study: định giá một doanh nghiệp niêm yết</li>
+          </ul>
+        </div>
+      </li>
+      <li class="curriculum-module">
+        <button class="module-head" aria-expanded="false">
+          <span class="module-num">03</span>
+          <span class="module-headline">
+            <span class="module-title">Phân tích kỹ thuật</span>
+            <span class="module-meta">Tuần 5 – 6 · 5 bài học</span>
+          </span>
+          <span class="module-caret">⌄</span>
+        </button>
+        <div class="module-body">
+          <ul class="check-list">
+          <li><img src="images/icon-check.svg" alt="">Đọc biểu đồ nến Nhật &amp; xu hướng giá</li>
+          <li><img src="images/icon-check.svg" alt="">Các chỉ báo kỹ thuật phổ biến: MA, MACD, RSI</li>
+          <li><img src="images/icon-check.svg" alt="">Mô hình giá &amp; vùng hỗ trợ/kháng cự</li>
+          <li><img src="images/icon-check.svg" alt="">Khối lượng giao dịch &amp; dòng tiền</li>
+          <li><img src="images/icon-check.svg" alt="">Thực hành phân tích trên biểu đồ thực tế</li>
+          </ul>
+        </div>
+      </li>
+      <li class="curriculum-module">
+        <button class="module-head" aria-expanded="false">
+          <span class="module-num">04</span>
+          <span class="module-headline">
+            <span class="module-title">Quản trị rủi ro</span>
+            <span class="module-meta">Tuần 7 – 8 · 4 bài học</span>
+          </span>
+          <span class="module-caret">⌄</span>
+        </button>
+        <div class="module-body">
+          <ul class="check-list">
+          <li><img src="images/icon-check.svg" alt="">Nguyên tắc quản lý vốn an toàn</li>
+          <li><img src="images/icon-check.svg" alt="">Đặt điểm cắt lỗ &amp; chốt lời hợp lý</li>
+          <li><img src="images/icon-check.svg" alt="">Tâm lý giao dịch: kiểm soát cảm xúc</li>
+          <li><img src="images/icon-check.svg" alt="">Xây dựng kỷ luật đầu tư cá nhân</li>
+          </ul>
+        </div>
+      </li>
+      <li class="curriculum-module">
+        <button class="module-head" aria-expanded="false">
+          <span class="module-num">05</span>
+          <span class="module-headline">
+            <span class="module-title">Chiến lược đầu tư</span>
+            <span class="module-meta">Tuần 9 – 10 · 4 bài học</span>
+          </span>
+          <span class="module-caret">⌄</span>
+        </button>
+        <div class="module-body">
+          <ul class="check-list">
+          <li><img src="images/icon-check.svg" alt="">Xây dựng danh mục đầu tư đa dạng hóa</li>
+          <li><img src="images/icon-check.svg" alt="">Chiến lược đầu tư giá trị &amp; đầu tư tăng trưởng</li>
+          <li><img src="images/icon-check.svg" alt="">Lập kế hoạch đầu tư dài hạn</li>
+          <li><img src="images/icon-check.svg" alt="">Bài tập tổng kết &amp; nhận chứng chỉ hoàn thành</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap cta-banner-inner">
+    <div>
+      <h2>Đã sẵn sàng học theo lộ trình này?</h2>
+      <p>Đăng ký ngay để bắt đầu module đầu tiên.</p>
+    </div>
+    <a href="dang-ky.html" class="btn btn-primary">Đăng ký ngay →</a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="brand">
+        <img src="images/logo.svg" alt="CKLpro">
+        <div>
+          <div class="brand-name">CKLpro</div>
+          <div class="brand-tagline">Kiến thức tạo nên giá trị</div>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><img src="images/social-facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/social-youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="images/social-tiktok.svg" alt="TikTok"></a>
+        <a href="#"><img src="images/social-linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      "Hành trình vạn dặm bắt đầu từ một kiến thức đúng đắn." &nbsp;·&nbsp; © 2026 CKLpro. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

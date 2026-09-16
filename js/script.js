@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* Menu di động */
   var menuToggle = document.getElementById('menuToggle');
   var mobileNav = document.getElementById('mobileNav');
 
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
         : 'images/icon-close.svg';
     });
 
-    // Đóng menu khi chọn
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         mobileNav.hidden = true;
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Ô tìm kiếm */
   var searchToggle = document.getElementById('searchToggle');
   var searchPanel = document.getElementById('searchPanel');
 
@@ -52,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Nút nhạc nền */
   var musicToggle = document.getElementById('musicToggle');
 
   if (musicToggle) {
@@ -74,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* Cuộn mượt cho liên kết nội bộ */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
       var targetId = link.getAttribute('href');
@@ -88,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* Thanh header thu nhỏ khi cuộn */
   var header = document.querySelector('.site-header');
   if (header) {
     var lastScroll = 0;
@@ -99,7 +93,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   }
 
-  /* Năm bản quyền tự động */
+  document.querySelectorAll('.curriculum-module .module-head').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var module = btn.closest('.curriculum-module');
+      var isOpen = module.classList.contains('is-open');
+      module.classList.toggle('is-open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+
   var yearEl = document.querySelector('.footer-bottom');
   if (yearEl) {
     yearEl.innerHTML = yearEl.innerHTML.replace('2026', String(new Date().getFullYear()));
